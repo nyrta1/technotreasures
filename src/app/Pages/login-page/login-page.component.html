@@ -1,0 +1,48 @@
+<!--main services-->
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+        <a routerLink="/login">
+            <h2 class="active"> Log in </h2>
+        </a>
+        <a routerLink="/register">
+            <h2 class="inactive underlineHover">Sign Up </h2>
+        </a>
+
+        <!-- Icon -->
+        <div class="fadeIn first">
+            <img src="https://www.pinclipart.com/picdir/big/165-1653686_female-user-icon-png-download-user-colorful-icon.png"
+                id="icon" alt="User Icon" />
+        </div>
+
+        <!-- Login Form -->
+        <form>
+            <input type="text" id="login" class="fadeIn second" name="login" placeholder="USERNAME">
+            <input type="text" id="password" class="fadeIn third" name="login" placeholder="PASSWORD">
+            <input type="submit" class="fadeIn fourth" value="Log In">
+        </form>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+            <a class="underlineHover" href="#">Forgot Password?</a>
+        </div>
+
+    </div>
+</div>
+
+<div id="cd-shadow-layer"></div>
+
+<div id="cd-cart">
+    <h2>Cart</h2>
+    <ul class="cd-cart-items">
+        <!--Here is the li it-->
+    </ul> <!-- cd-cart-items -->
+
+    <div class="cd-cart-total">
+        <p>Total <span id="countOfPrice">0</span></p>
+    </div> <!-- cd-cart-total -->
+
+    <a href="#0" class="checkout-btn">Checkout</a>
+
+    <p class="cd-go-to-cart"><a href="#0">Go to cart page</a></p>
+</div> <!-- cd-cart -->

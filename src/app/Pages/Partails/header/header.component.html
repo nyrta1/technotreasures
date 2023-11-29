@@ -1,0 +1,70 @@
+<!--header part-->
+<header class="">
+    <div class="bg-image" style="background-image: url(/assets/img/home-page-hero-part-picture.jpg);">
+        <nav class="navbar navbar-expand-md navbar-light p-3 fixed-top">
+            <div class="container-fluid">
+
+                <!--logo-->
+                <a routerLink="/" class="navbar-brand">
+                    <img id="logo" class="d-inline-block align-text-top"
+                        src="/assets/img/logo/for-web/png/white-logo-with-title.png" alt="logo">
+                </a>
+
+                <!--nav for small screen-->
+                <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--main links-->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a routerLink="/" class="nav-link mx-2 text-center text-white active"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/catalog" class="nav-link mx-2 text-center text-white">Catalog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/discounts"
+                                class="nav-link mx-2 text-center text-white">Stocks/Discounts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/about-us" class="nav-link mx-2 text-center text-white">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link mx-2 text-center text-white dropdown-toggle" href=""
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Account
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" routerLink="/register">Sign up</a></li>
+                            </ul>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" routerLink="/login">Log in</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!--icons-->
+                    <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
+                        <li class="nav-item mx-2 position-relative">
+                            <a id="cd-cart-trigger" href="#" class="nav-link text-white h5">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span id="countOfProducts"
+                                    class="position-absolute top-0 start-75 translate-middle badge bg-primary">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--slogan-->
+        <div class="d-flex justify-content-center align-items-center" style="height: 80vh;">
+            <h1 id="slogan" class="text-white mb-0 slogan">Discover Tech, Unearth Treasures</h1>
+        </div>
+    </div>
+</header>
